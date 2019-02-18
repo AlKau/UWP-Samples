@@ -1,0 +1,30 @@
+﻿<Page x:Class="NavigationViewBug.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:NavigationViewBug"
+      xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
+      NavigationCacheMode="Enabled"
+      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <muxc:NavigationView ItemInvoked="OnItemInvoked">
+            <muxc:NavigationView.MenuItems>
+                <muxc:NavigationViewItem Content="Page #1"
+                                         Icon="Page"
+                                         Tag="Page #1" />
+                <muxc:NavigationViewItem Content="Page #2"
+                                         Icon="Page2"
+                                         Tag="Page #2" />
+                <muxc:NavigationViewItem Content="Pane #3"
+                                         Icon="Cancel"
+                                         Tag="Page #3" />
+            </muxc:NavigationView.MenuItems>
+
+            <Frame x:Name="FrameContent"/>
+
+        </muxc:NavigationView>
+    </Grid>
+</Page>
