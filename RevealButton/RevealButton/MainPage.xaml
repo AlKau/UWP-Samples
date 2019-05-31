@@ -4,6 +4,7 @@
       xmlns:local="using:RevealButton"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:muxm="using:Microsoft.UI.Xaml.Media"
       mc:Ignorable="d"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
       RequestedTheme="Dark">
@@ -102,30 +103,30 @@
                     <ResourceDictionary>
                         <ResourceDictionary.ThemeDictionaries>
                             <ResourceDictionary x:Key="Default">
-                                <RevealBackgroundBrush x:Key="ButtonRevealBackground"
-                                                       TargetTheme="Dark"
-                                                       Color="DarkGreen"
-                                                       FallbackColor="Red" />
+                                <muxm:RevealBackgroundBrush x:Key="ButtonRevealBackground"
+                                                            TargetTheme="Dark"
+                                                            Color="DarkGreen"
+                                                            FallbackColor="Red" />
 
-                                <RevealBackgroundBrush x:Key="ButtonRevealBackgroundPointerOver"
-                                                       TargetTheme="Dark"
-                                                       Color="DarkGreen"
-                                                       FallbackColor="Red" />
+                                <muxm:RevealBackgroundBrush x:Key="ButtonRevealBackgroundPointerOver"
+                                                            TargetTheme="Dark"
+                                                            Color="DarkGreen"
+                                                            FallbackColor="Red" />
 
-                                <RevealBackgroundBrush x:Key="ButtonRevealBackgroundPressed"
-                                                       TargetTheme="Dark"
-                                                       Color="DarkGreen"
-                                                       FallbackColor="Red" />
+                                <muxm:RevealBackgroundBrush x:Key="ButtonRevealBackgroundPressed"
+                                                            TargetTheme="Dark"
+                                                            Color="DarkGreen"
+                                                            FallbackColor="Red" />
 
-                                <RevealBorderBrush x:Key="ButtonRevealBorderBrushPointerOver"
-                                                   TargetTheme="Dark"
-                                                   Color="DarkGreen"
-                                                   FallbackColor="Red" />
+                                <muxm:RevealBorderBrush x:Key="ButtonRevealBorderBrushPointerOver"
+                                                        TargetTheme="Dark"
+                                                        Color="DarkGreen"
+                                                        FallbackColor="Red" />
 
-                                <RevealBorderBrush x:Key="ButtonRevealBorderBrushPressed"
-                                                   TargetTheme="Dark"
-                                                   Color="DarkGreen"
-                                                   FallbackColor="Red" />
+                                <muxm:RevealBorderBrush x:Key="ButtonRevealBorderBrushPressed"
+                                                        TargetTheme="Dark"
+                                                        Color="DarkGreen"
+                                                        FallbackColor="Red" />
                             </ResourceDictionary>
                             <ResourceDictionary x:Key="Light" />
 
